@@ -12,7 +12,7 @@ This project serves as a Flask template designed for entrepreneurial software en
 
 2. **Secure Environment Variables**
    - I did something really silly and pushed my .env file into the public... NEVER DO THIS! You don't want random people viewing your secrets
-   - This is to demonstrate an important lesson to learn immediately as well as the many nuiances of webapplications. Now fix my mistake!
+   - This is to demonstrate an important lesson to learn immediately as well as helping you understand that there are many nuiances of building web applications. Now fix my mistake!
    - Locate `.gitignore` and add `.env` to the environments section to ensure sensitive data (e.g., API keys, secret keys) is not exposed on GitHub.
 
 3. **Setting Up Virtual Environment**
