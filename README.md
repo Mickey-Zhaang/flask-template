@@ -3,7 +3,7 @@
 ## Author: Mickey Zhang
 
 ### Purpose
-This project serves as a Flask template designed for entrepreneurial software engineering purposes at Colby College (CS422).
+This project serves as a Flask template designed for entrepreneurial software engineering course (CS422) at Colby College .
 
 ## Initial Setup
 
