@@ -15,4 +15,5 @@ def index():
     """
     Landing Page
     """
+    # renders the landing page "/"
     return render_template("index.html")

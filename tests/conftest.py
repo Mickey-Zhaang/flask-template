@@ -42,5 +42,6 @@ def client(app):
         Scope: function
         Yields a client for testing!
     """
+    # Uses the app context to yield a testing client
     with app.test_client() as test_client:
         yield test_client
