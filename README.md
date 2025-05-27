@@ -35,3 +35,13 @@ This project serves as a Flask template designed for entrepreneurial software en
    Run the following command to install dependencies listed in `requirements.txt`:
    ```bash
    pip install -r requirements.txt
+   ```
+5. **Explore Around the Application**
+   Test out the app using:
+   ```bash
+   python app.py
+   ```
+   Or run some tests:
+   ```bash
+   ppython tests/run_tests.py
+   ```
