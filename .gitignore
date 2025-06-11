@@ -1,4 +1,3 @@
 # this is your .gitignore, anything in here will be ignored by git => will not be pushed in Github
 
 /venv
-.env
