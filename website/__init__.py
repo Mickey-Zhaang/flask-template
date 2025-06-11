@@ -1,5 +1,6 @@
 """
-App Factory i.e. the init of the website: accessed by app.py
+App Factory i.e. the init of the website package: 
+    - Accessed by app.py
 """
 
 # dealing with imports
@@ -22,7 +23,7 @@ def create_app():
     app.config["DEBUG"] = True
     app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
 
-    # Registering Blueprints
+    # Registering any Blueprints
     app.register_blueprint(main_blueprint)
 
     return app

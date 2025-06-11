@@ -1,7 +1,7 @@
 """
 (Unit)
-test_math.py: tests "math.py" module in an isolated environment i.e. unit testing
-
+test_math.py:   tests "math.py" module in an isolated environment i.e. unit testing
+                basically verifies that given some input, we produce the right output
 tests:
     - test_add
     - test_subtract
@@ -16,10 +16,10 @@ def test_add():
     WHEN add() is called
     TEST functionality
     """
-    result = add(2, 2)
+    result = add(2, 3)
 
-    # assert our result is true
-    assert result == 4
+    # assert our result is true: if this assertion fails => this test fails
+    assert result == 5
 
 
 def test_subtract():

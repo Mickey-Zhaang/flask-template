@@ -1,5 +1,5 @@
 """
-views.py -- consists of any routes/pages visible to client
+views.py -- consists of any routes/pages visible to client (End to End)
 contains the logic handling and the rendering of html pages
 """
 

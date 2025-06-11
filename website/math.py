@@ -1,5 +1,5 @@
 """
-"math.py"
+"math.py": a simple file containing functions for arithmatic
 
 functions:
     - add
