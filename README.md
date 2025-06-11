@@ -3,7 +3,8 @@
 ## Author: Mickey Zhang
 
 ### Purpose
-This project serves as a Flask template designed for entrepreneurial software engineering course (CS321-422) at Colby College .
+This project serves as a Flask template designed and summarized from entrepreneurial software engineering course sequence (CS321-422) at Colby College.
+Thank you Prof. Al Madi for letting me into your sequence!
 
 ## Initial Setup
 
@@ -43,5 +44,5 @@ This project serves as a Flask template designed for entrepreneurial software en
    ```
    Or run some tests:
    ```bash
-   ppython tests/run_tests.py
+   python tests/run_tests.py
    ```
