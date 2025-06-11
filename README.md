@@ -59,8 +59,11 @@ Thank you Prof. Al Madi for letting me into your sequence!
 ## Next Steps
 
 1. Start **hosting your website** on a cloud hosting service like [Heroku](https://www.heroku.com/):
+
    - Your Procfile is already set up!
+
 2. Start building things!
+
    - Q&A Bot with OpenAI API
    - Weather App
    - etc...
