@@ -42,11 +42,13 @@ Thank you Prof. Al Madi for letting me into your sequence!
    - You should see `(venv)` above your terminal prompt.
 
 4. **Install Dependencies**
+
    Run the following command to install dependencies listed in `requirements.txt`:
    ```bash
    pip install -r requirements.txt
    ```
 5. **Explore Around the Application**
+ 
    Test out the app using:
    ```bash
    python app.py
@@ -55,6 +57,9 @@ Thank you Prof. Al Madi for letting me into your sequence!
    ```bash
    python tests/run_tests.py
    ```
+
+## Glossary
+1. (needs to be filled in)
 
 ## Next Steps
 
