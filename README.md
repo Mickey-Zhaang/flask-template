@@ -7,60 +7,65 @@
 This project serves as a Flask template designed and summarized from entrepreneurial software engineering course sequence (CS321-422) at Colby College.
 Thank you Prof. Al Madi for letting me into your sequence!
 
-## Initial Setup
+## Quick Start
 
-1. **Fork the Repository** to make it your own!
+### 1. Fork and Clone
 
-   - After forking, clone and open the project in your preferred code editor.
+```bash
+# After forking, clone the repository locally
+git clone <your-repo-url>
+cd flask-template
 
-2. **Secure Environment Variables**
+# Setup virtual environment (venv)
+python -m venv venv
 
-   - I did something really silly and pushed my .env file into the public... NEVER DO THIS! You don't want random people viewing your secrets
-   - This is to demonstrate an important lesson to learn immediately as well as helping you understand that there are many nuiances of building web applications. Now fix my mistake!
-   - Locate `.gitignore` and add `.env` to the file to ensure sensitive data (e.g., API keys, secret keys) is not exposed on GitHub.
-   - Finally run in your terminal
-     ```bash
-     git rm --cached .env
-     ```
-     In the case you ever accidently push any sensitive information, this removes the reference from Git's history.
+source venv/Scripts/activate # Windows
+# or
+source venv/bin/activate # Mac
+```
 
-3. **Setting Up Virtual Environment**
+### 2. Environment Configuration
 
-   - Create a virtual environment and name it `venv` (could be anything):
-     ```bash
-     python -m venv venv
-     ```
-   - Activate the virtual environment:
-     - On Windows:
-       ```bash
-       source venv/Scripts/activate
-       ```
-     - On macOS/Linux:
-       ```bash
-       source venv\bin\activate
-       ```
-   - You should see `(venv)` above your terminal prompt.
+```bash
+# Create environment file (or just manually rename .env.example to .env)
+cp .env.example .env
 
-4. **Install Dependencies**
-   Run the following command to install dependencies listed in `requirements.txt`:
-   ```bash
-   pip install -r requirements.txt
-   ```
-5. **Explore Around the Application**
-   Test out the app using:
-   ```bash
-   python app.py
-   ```
-   Or run some tests:
-   ```bash
-   python tests/run_tests.py
-   ```
+# ^^ very important, if you check .gitignore... Git will ignore any files specified
+# Essentially anything you don't want the public seeing i.e. your OpenAI API key
+```
 
-## Next Steps
+### 3. Install Dependencies
 
-1. Start **hosting your website** on a cloud hosting service like [Heroku](https://www.heroku.com/):
-   - Your Procfile is already set up!
-2. Start building things!
-   - Q&A Bot with OpenAI API
-   - Weather App
-   - etc...
+```bash
+# Install all dependencies
+pip install -r requirements.txt
+```
+
+### 4. Run the Application
+
+```bash
+# Development server
+python app.py
+
+# Or with Flask CLI
+flask run
+```
+
+Visit `http://localhost:5000` to see your app!
+
+## Testing
+
+```bash
+# Run all tests
+pytest
+
+# Run with coverage
+pytest --cov=website --cov-report=term-missing -v
+
+# Run linting on website
+pylint website
+
+# Run a specific test file
+pytest test/functional/test_views.py
+
+```
