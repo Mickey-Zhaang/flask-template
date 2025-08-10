@@ -7,6 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       OPENAI_API_KEY: ${{ secrets.API_KEY }}
+      FLASK_SECRET_KEY: ${{ secrets.FLASK_SECRET_KEY }}
     strategy:
       matrix:
         python-version: ["3.11.9"]
@@ -27,7 +28,7 @@ jobs:
         run: |
           pylint website --fail-under=9 website
 
-      - name: Run tests with pytest
+      - name: Run tests with Pytest
         run: |
           pip install pytest pytest-cov
           pytest --cov=website --cov-report=term-missing -v
