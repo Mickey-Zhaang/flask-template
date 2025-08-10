@@ -16,6 +16,10 @@ def create_app():
     """
     app = Flask(__name__)
 
+    # setting up secret key
+    app.secret_key = os.environ.get("FLASK_SECRET_KEY") or "lol_prob_not_getting_used"
+
+    # register any blueprints
     app.register_blueprint(main_blueprint)
 
     return app
