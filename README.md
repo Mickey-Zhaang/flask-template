@@ -27,7 +27,7 @@ source venv/bin/activate # Mac
 ### 2. Environment Configuration
 
 ```bash
-# Create environment file (or just manually rename .env.example to .env)
+# Create environment file (or just manually rename .env.example to .env by right clicking)
 cp .env.example .env
 
 # ^^ very important, if you check .gitignore... Git will ignore any files specified

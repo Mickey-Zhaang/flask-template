@@ -1,18 +1,21 @@
 """
-__init__.py
+__init__.py: The "App factory"
 """
 
 import os
 from dotenv import load_dotenv
 from flask import Flask
+
+# blueprints
 from website.views import main_blueprint
 
+# loads environmental variables from .env
 load_dotenv()
 
 
 def create_app():
     """
-    Create the weather app
+    Create a basic Flask Application
     """
     app = Flask(__name__)
 

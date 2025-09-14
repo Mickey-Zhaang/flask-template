@@ -1,6 +1,6 @@
 """
-views.py: defining routes/pages for user flow
-    i.e. index or "/" is the default route which we can treat as the Landing Page
+views.py: defining routes/pages for user flow by rendering templates/html files
+    i.e. the main landing page defined by the route "/" below
 """
 
 from flask import Blueprint, render_template

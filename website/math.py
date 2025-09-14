@@ -1,5 +1,6 @@
 """
-math.py: dedicated to performing basic arithmetic operations
+math.py: performs basic arithmetic
+    a simple file dedicated to demonstrating Pytest
 """
 
 
