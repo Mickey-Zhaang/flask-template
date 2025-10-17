@@ -57,15 +57,9 @@ Visit `http://localhost:5000` to see your app!
 
 ```bash
 # Run all tests
-pytest
+python test/run_tests.py
 
-# Run with coverage
-pytest --cov=website --cov-report=term-missing -v
-
-# Run linting on website
-pylint website
-
-# Run a specific test file
-pytest test/functional/test_views.py
+# Run linter
+python test/run_lint.py
 
 ```
